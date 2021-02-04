@@ -10,13 +10,17 @@ function mostrarAumento()
 {
 	var sueldo;
 	var resultado;
-	var aumento //el porcentaje de aumento
+	var aumento //el porcentaje de aumento para sumar al sueldo original
+    //el calculo de porcentaje de un valor, lo consigo 
+    /* multiplicando el valor del porcentaje
+      y lo divido por 100 */
+
 	
 	sueldo = txtIdSueldo.value;
 	sueldo = parseInt(sueldo);
 
 	aumento = sueldo * 10/100;
-	//aumento = sueldo * 0,1;
+	//aumento = sueldo * 0,1;en este caso resolvi el 10/100
 
 	resultado = sueldo + aumento
 	//resultado = sueldo + (sueldo * 0,1);

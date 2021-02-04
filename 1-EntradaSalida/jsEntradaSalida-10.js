@@ -10,7 +10,7 @@ function mostrarAumento()
 {
 	var importe;
 	var resultado;
-	var descuento;
+	var descuento; //los descuentos se restan
 	
 	importe = txtIdImporte.value;
 	importe = parseInt(importe);
@@ -20,7 +20,8 @@ function mostrarAumento()
 
 	resultado = importe - descuento;
 	//resultado = importe - (importe * 0.25);
-	//resultado = importe * 0.75;
+	//resultado = importe * 0.75; aca se podria dar el
+	// importe final ya que al 100% le reste el 25% del importe
 	
 
 	txtIdResultado.value = resultado;
