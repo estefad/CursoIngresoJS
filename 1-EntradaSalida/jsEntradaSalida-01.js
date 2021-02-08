@@ -7,3 +7,7 @@ function mostrar()
 	
 }
 
+/*el objetivo es la buena programacion, no la funcionalidad
+el lenguaje es CASE SENSITIVE
+variables: define un lugar en memoria (var/let)
+*/

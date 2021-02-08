@@ -35,13 +35,15 @@ function Circulo ()
 	var perimetro;
 	var radio;
 	var alambre;
-	const PI = 3.14; //siempre con el valor con punto, no coma
+	//const PI = 3.14; //siempre con el valor con punto, no coma
 
 	radio = txtIdRadio.value;
 
 	radio = parseInt(radio);
 
-	perimetro = 2 * PI * radio;
+	//perimetro = 2 * PI * radio;
+   //perimetro = 2 * 3.14 * radio;
+   perimetro = 2 * Math.PI * radio;
 
 	alambre = perimetro * 3;
 
@@ -58,7 +60,7 @@ function Materiales ()
    var cemento;
    var cal;
    
-   largo = txtIdLargo.value;
+   largo = txtIdLargo.value; //erroe sin value: error en html o NaN
    ancho = txtIdAncho.value;
 
    largo = parseInt(largo);

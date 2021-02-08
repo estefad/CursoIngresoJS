@@ -4,8 +4,8 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let num1;
-	let num2;
+	let num1; //no conviene abreviar, usar el nombre que se
+	let num2; //se entienda
 	let suma; //conviene usar el nombre de la operacion
 
 
@@ -23,6 +23,11 @@ function sumar()
 	alert("el resultado es: " + suma);
 }
 //cuando no hago parseInt, el alert concatena, no suma
+/*
+
+
+*/
+
 
 
 
