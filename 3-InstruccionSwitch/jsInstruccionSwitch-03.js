@@ -38,3 +38,8 @@ function mostrar()
 
 
 }//FIN DE LA FUNCIÓN
+
+/*default: no tiene valor, si el programa no entro en 
+ninguno de los case anterior y llega a default, entra en 
+default y se levantan los datos de la lista desplegable,
+solo sirve en estos casos */

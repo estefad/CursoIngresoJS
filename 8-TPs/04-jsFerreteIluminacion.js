@@ -14,102 +14,22 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {
  	var cantidadLamparas;
- 	var marca;
- 	var precioUnitario = 35;
- 	var descuento;
- 	var precioParcial;
- 	var precioConDescuento;
- 	var IIBB;
- 	var impuestoAgregado = 10;
- 	var precioConIIBB;
+    var marca;
+    var precioUnitario = 35;
+    var descuento;
+    //var precioParcial;
+    var precioConDescuento;
+    var IIBB;
+    var impuestoAgregado = 10;
+    var precioConIIBB;
 
- 	cantidadLamparas = txtIdCantidad.value;
- 	marca = document.getElementById("Marca").value;
+    cantidadLamparas = txtIdCantidad.value;
+    marca = document.getElementById("Marca").value;
 
- 	cantidadLamparas = parseInt(cantidadLamparas);
- 	descuento = parseInt(descuento);
- 	IIBB = parseInt(IIBB);
- 	impuestoAgregado = parseInt(impuestoAgregado)
-
-    if(cantidadLamparas > 5)
- 	{
- 		descuento = 50;
-		mensaje = "la oferta, con un 50% de descuento es: ";
- 	}
-    else
-    {
-     if(cantidadLamparas == 5 ) //marca == "ArgentinaLuz"
- 	 {
- 	 	if (marca == "ArgentinaLuz")
- 	 	{
- 	 		descuento = 40;
-			mensaje = "la oferta, con un 40% de descuento es: ";
- 	 	}
- 	 	else
- 	 	{
- 	 		descuento = 30;
-			mensaje = "la oferta, con un 30% de descuento es: ";	
- 	 	}  	 			    		
- 	 }
- 	 else
- 	 {
- 	 	if(cantidadLamparas == 4)
- 	 	{
- 	 		if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
- 	 		{
- 	 			descuento = 25;
- 	 			mensaje = "la oferta, con un 25% de descuento es: ";
- 	 		}
- 	 		else
- 	 		{
- 	 			descuento = 20;
- 	 			mensaje = "la oferta, con un 20% de descuento es: ";
- 	 		}
- 	 	}
- 	 	else
- 	 	{
- 	 		if(cantidadLamparas == 3)
- 	 		{
- 	 			if(marca == "ArgentinaLuz")
- 	 			{
- 	 				descuento = 15;
- 	 				mensaje = "la oferta, con un 15% de descuento es: ";
- 	 			}
- 	 			else
- 	 			{
- 	 				if(marca == "FelipeLamparas")
- 	 				{
- 	 					descuento = 10;
- 	 					mensaje = "la oferta, con un 10% de descuento es: ";
- 	 				}
- 	 				else
- 	 				{
- 	 					descuento = 5;
- 	 					mensaje = "la oferta, con un 5% de descuento es: ";
- 	 				}
- 	 			}
- 	 		}
- 	 		
- 	 	}
- 	 }
-
- 	}
- 	if(precioConDescuento > 119)
- 	{
- 	 	impuestoAgregado = 10;
- 	}
-
-
-    precioParcial = precioUnitario * descuento / 100;
-    precioConDescuento = (precioUnitario - precioParcial) + (cantidadLamparas * precioUnitario);
-    mensaje = mensaje + precioConDescuento
-
-    IIBB = precioConDescuento * impuestoAgregado / 100;
- 	precioConIIBB = precioConDescuento + IIBB;
- 	
-
-    txtIdprecioDescuento.value = mensaje;
-    alert("Usted pago 10% de IIBB, siendo " + precioConIIBB + " el impuesto que se pagó");
+    cantidadLamparas = parseInt(cantidadLamparas);
+    descuento = parseInt(descuento);
+    IIBB = parseInt(IIBB);
+    impuestoAgregado = parseInt(impuestoAgregado)
 }
 
 
@@ -120,53 +40,115 @@ function CalcularPrecio ()
 
 
 
-/*if(cantidadLamparas > 5)
- 	{
- 		descuento = precio * 50 / 100;
- 		precioConDescuento = precio - descuento;
 
- 		mensaje = "la oferta, con un 50% de descuento es: " + precioConDescuento;
- 		txtIdprecioDescuento.value = mensaje;
- 	}
+
+
+
+
+
+
+
+
+
+
+
+/*var cantidadLamparas;
+    var marca;
+    var precioUnitario = 35;
+    var descuento;
+    var precioParcial;
+    var precioConDescuento;
+    var IIBB;
+    var impuestoAgregado = 10;
+    var precioConIIBB;
+
+    cantidadLamparas = txtIdCantidad.value;
+    marca = document.getElementById("Marca").value;
+
+    cantidadLamparas = parseInt(cantidadLamparas);
+    descuento = parseInt(descuento);
+    IIBB = parseInt(IIBB);
+    impuestoAgregado = parseInt(impuestoAgregado)
+
+    if(cantidadLamparas > 5)
+    {
+        descuento = 50;
+        mensaje = "la oferta, con un 50% de descuento es: ";
+    }
     else
     {
-     if(cantidadLamparas == 5 && marca == "ArgentinaLuz")
- 	 {
- 		descuento = precio * 40 / 100;
- 		precioConDescuento = precio - descuento;
+     if(cantidadLamparas == 5 ) //marca == "ArgentinaLuz"
+     {
+        if (marca == "ArgentinaLuz")
+        {
+            descuento = 40;
+            mensaje = "la oferta, con un 40% de descuento es: ";
+        }
+        else
+        {
+            descuento = 30;
+            mensaje = "la oferta, con un 30% de descuento es: ";    
+        }                           
+     }
+     else
+     {
+        if(cantidadLamparas == 4)
+        {
+            if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+            {
+                descuento = 25;
+                mensaje = "la oferta, con un 25% de descuento es: ";
+            }
+            else
+            {
+                descuento = 20;
+                mensaje = "la oferta, con un 20% de descuento es: ";
+            }
+        }
+        else
+        {
+            if(cantidadLamparas == 3)
+            {
+                if(marca == "ArgentinaLuz")
+                {
+                    descuento = 15;
+                    mensaje = "la oferta, con un 15% de descuento es: ";
+                }
+                else
+                {
+                    if(marca == "FelipeLamparas")
+                    {
+                        descuento = 10;
+                        mensaje = "la oferta, con un 10% de descuento es: ";
+                    }
+                    else
+                    {
+                        descuento = 5;
+                        mensaje = "la oferta, con un 5% de descuento es: ";
+                    }
+                }
+            }
+            
+        }
+     }
 
- 		mensaje = "la oferta, con un 40% de descuento es: " + precioConDescuento;
- 		txtIdprecioDescuento.value = mensaje;
- 	 }
- 	 else
- 	 {
- 	 	if(cantidadLamparas == 5)
- 	 	{
- 	 	   descuento = precio * 30 / 100;
- 		   precioConDescuento = precio - descuento;
+    }
+    if(precioConDescuento > 119)
+    {
+        impuestoAgregado = 10;
+    }
 
- 		   mensaje = "la oferta, con un 30% de descuento es: " + precioConDescuento;
- 		   txtIdprecioDescuento.value = mensaje;
- 	    }
- 	    else
- 	    {
- 	    	if(cantidadLamparas == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas")
- 	    	{
- 	    		descuento = precio * 25 / 100;
- 	    		precioConDescuento = precio - descuento;
 
- 	    		mensaje = "la oferta, con un 25% de descuento es: " + precioConDescuento;
- 		        txtIdprecioDescuento.value = mensaje;
- 	    	}
- 	    	else
- 	    	{
- 	    		descuento = precio * 20 / 100;
- 	    		precioConDescuento = precio - descuento;
+    precioParcial = precioUnitario * descuento / 100;
+    precioConDescuento = (precioUnitario - precioParcial) + (cantidadLamparas * precioUnitario);
+    mensaje = mensaje + precioConDescuento;
 
- 	    		mensaje = "la oferta, con un 20% de descuento es: " + precioConDescuento;
- 		        txtIdprecioDescuento.value = mensaje;
- 	    	}
- 	    }
- 	 }
+    IIBB = precioConDescuento * impuestoAgregado / 100;
+    precioConIIBB = precioConDescuento + IIBB;
+    
 
-    }*/
+    txtIdprecioDescuento.value = mensaje;
+    alert("Usted pago 10% de IIBB, siendo " + precioConIIBB + " el impuesto que se pagó");*/
+
+
+

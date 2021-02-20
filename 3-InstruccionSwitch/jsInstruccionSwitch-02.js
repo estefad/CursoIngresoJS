@@ -38,6 +38,9 @@ function mostrar()
 
       case "Julio":
       case "Agosto":
+            /*edad = prompt("su edad es");
+            edad = parseInt(edad);
+            if(edad < 15){}*/
             alert("Abrigate que hace frio");
             break;         
  

@@ -6,6 +6,13 @@ function mostrar()
 	var sexoIngresado;
 	sexoIngresado = prompt("ingrese f ó m .");
 
+	sexoIngresado = sexoIngresado.toLowerCase();
+
+	while()
+	{
+		sexoIngresado = prompt("ingrese f ó m .");
+	}
+
 
 
 	txtIdSexo.value=sexoIngresado;

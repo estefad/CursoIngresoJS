@@ -29,9 +29,11 @@ function mostrar()
             break;
 
       case "Diciembre":
-            alert("Felices fiestas!!!");        
+            alert("Felices fiestas!!!");    
+            break;   
 
-    }
-
+            default://default aparece cuando no se entro a ningun caso
+            alert("aca no pasa nada"); 
+    } 
 
 }//FIN DE LA FUNCIÓN
