@@ -1,5 +1,5 @@
-/*
-Al presionar el botón pedir  números  
+//Ejercicio 10
+/*Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
 1-Suma de los negativos.
 2-Suma de los positivos.
@@ -10,17 +10,27 @@ hasta que el usuario quiera, mostrar:
 7-Promedio de positivos.
 8-Promedios de negativos.
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
+//Dominguez Estefania 1h
+
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
+	var respuesta = "si";
 	var numeroIngresado;
-	var sumaNegativos=0;
-
-	respuesta="si";
+	var sumaNegativos = 1;
+	var sumaPositivos = 0;
+	var cantidadNegativos;
+	var cantidadPositivos;
+	var cantidadCeros;
+	var cantidadPares;
+	var promedioPositivos;
+	var promedioNegativos;
+	var restaPositivosNegativos;
 
 	while(respuesta=="si")
 	{
+		numeroIngresado = prompt("Ingrese un numero")
+		numeroIngresado = parseInt(numeroIngresado);
 		
 		respuesta=prompt("desea continuar?");
 	}//fin del while

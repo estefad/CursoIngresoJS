@@ -12,7 +12,14 @@ var contadorIntentos;
 
 function comenzar()
 {
+	var numeroMaximo = 100
+	var numeroMinimo = 1
+	var numeroIngresado;
+
+	numeroIngresado = txtIdNumero.value
+
 	//Genero el número RANDOM entre 1 y 100
+	  numero = Math.round(Math.random()* 9 + 1);
 	 
 		//alert(numeroSecreto );
 	
@@ -21,6 +28,8 @@ function comenzar()
 
 function verificar()
 {
-	
+	var cantidadIntentos
+	txtIdIntentos.value = cantidadIntentos
 	
 }
+

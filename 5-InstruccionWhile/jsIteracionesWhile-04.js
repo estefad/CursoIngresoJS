@@ -13,22 +13,15 @@ function mostrar()
 
 
 	//while(!(numeroIngresado >=0 && numeroIngresado<=9))
-	while(numeroIngresado > 10 || numeroIngresado < 0)
+	while(numeroIngresado > 10 || numeroIngresado < 0) 
+		/*esta condicion se repite hasta que ingrese un num
+	    del 0 al 9*/
 	{
 		numeroIngresado = prompt("ingrese un número entre 0 y 9");
 		txtIdNumero.value = numeroIngresado;
 		
 	}
 
-
-	/*if(numeroIngresado >= 0 || numeroIngresado < 10)
-	{
-		txtIdNumero.value = numeroIngresado;
-	}
-	else
-	{
-      alert("no es valido");
-	}*/
 }
 
 /*VALIDACIONES
