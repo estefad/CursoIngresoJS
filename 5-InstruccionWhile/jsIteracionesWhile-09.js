@@ -26,10 +26,9 @@ function mostrar()
 			if(banderaDelMenor == "es el primer menor")	    	
 			{
 				numeroMenorPar = numeroIngresado;
-		    }		
-			banderaDelMenor = "no es el primer menor";			
+		    }			    		  	
+		banderaDelMenor = "no es el primer menor";			
 		}
-
 		if (numeroIngresado < numeroMayorNegativo)
 		{
 			if(banderaDelNegativo == "es el primer negativo")
@@ -41,8 +40,15 @@ function mostrar()
 					
 		respuesta = prompt("desea continuar?");
 	}
+	if (numeroIngresado % 2 != 0) 
+	{
+		txtIdMaximo.value = "no se ingreso ningun numero par";
+	}
+	else
+	{
+		txtIdMaximo.value = "El menor par es : " + numeroMenorPar;
+	}
 
-	txtIdMaximo.value = "El menor par es : " + numeroMenorPar;
 	txtIdMinimo.value = "El mayor negativo es: " + numeroMayorNegativo;
 }//FIN DE LA FUNCIÓN
 
